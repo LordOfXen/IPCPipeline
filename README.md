@@ -13,7 +13,7 @@ This project is based on [Cloudtoid/Interprocess](https://github.com/cloudtoid/i
 
 # What can it do?
 It wraps the necessary classes to only one class called **IPCPipeline** which you can use for both writing and reading in a channel.
-We use [Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json) for sending and receiving data over Cloidtoid Interprocess library. This makes it easy to read any object or data in a subscriber.
+We use [Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json) for sending and receiving data over Cloudtoid Interprocess library. This makes it easy to read any object or data in a subscriber.
 
 Due to JSON and other circumstances, this library will slightly be slower than the original low-level library. So if speed is a concern for you (if your project is as sensitive as nanoseconds or less than 2 milliseconds), then do not use this project. Use the original, low-level version at https://github.com/cloudtoid/interprocess.
 
