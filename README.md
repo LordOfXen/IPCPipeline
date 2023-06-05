@@ -1,6 +1,12 @@
 <img src="https://raw.githubusercontent.com/LordOfXen/IPCPipeline/main/logo_header.png">
 
 # IPCPipeline (front-end for Cloudtoid Interprocess)
+
+[<img src="https://img.shields.io/badge/nuget-v1.0.0-green">](https://www.nuget.org/packages/IPCPipeline/)
+[<img src="https://img.shields.io/badge/License-MIT-blue">](LICENSE)
+<img src="https://img.shields.io/badge/.net-%3E%206.0-blue">
+<img src="https://img.shields.io/badge/.net%20core-%3E%203.1-blue">
+
 Inter-process bi-directional communication pipeline (IPC) or (IPBDC) that can both write and read data at the same time. This uses [cloudtoid/interprocess](https://github.com/cloudtoid/interprocess) as its low-level backend API.
 
 This project is based on [Cloudtoid/Interprocess](https://github.com/cloudtoid/interprocess) and is for the ones that do not want to spend time on writing a wrapper for their project to use that library.
