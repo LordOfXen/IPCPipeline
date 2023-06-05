@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>IPCPipeline</id>
+    <version>1.0.0</version>
+    <title>IPC Pipeline</title>
+    <authors>Xen</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <description>Inter-process bi-directional communication pipeline (IPC) or (IPBDC) that can both write and read data at the same time.
+This uses cloudtoid/interprocess as its low-level backend API.</description>
+    <copyright>Copyright ©, Xen. All rights reserved.</copyright>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="Cloudtoid.Interprocess" version="1.0.175" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net6.0">
+        <dependency id="Cloudtoid.Interprocess" version="1.0.175" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net7.0">
+        <dependency id="Cloudtoid.Interprocess" version="1.0.175" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="F:\vs_projects\IPCPipeline\IPCPipeline\bin\Release\net6.0\IPCPipeline.dll" target="lib\net6.0\IPCPipeline.dll" />
+    <file src="F:\vs_projects\IPCPipeline\IPCPipeline\bin\Release\net6.0\IPCPipeline.xml" target="lib\net6.0\IPCPipeline.xml" />
+    <file src="F:\vs_projects\IPCPipeline\IPCPipeline\bin\Release\net7.0\IPCPipeline.dll" target="lib\net7.0\IPCPipeline.dll" />
+    <file src="F:\vs_projects\IPCPipeline\IPCPipeline\bin\Release\net7.0\IPCPipeline.xml" target="lib\net7.0\IPCPipeline.xml" />
+    <file src="F:\vs_projects\IPCPipeline\IPCPipeline\bin\Release\netcoreapp3.1\IPCPipeline.dll" target="lib\netcoreapp3.1\IPCPipeline.dll" />
+    <file src="F:\vs_projects\IPCPipeline\IPCPipeline\bin\Release\netcoreapp3.1\IPCPipeline.xml" target="lib\netcoreapp3.1\IPCPipeline.xml" />
+  </files>
+</package>
