@@ -46,7 +46,7 @@ pipe.OnMessageReceived += (msgid, data) =>
 };
 ```
 
-###Send Primitive Types rather than Objects
+### Send Primitive Types rather than Objects
 If you do not want to create custom classes, you can use the built-in primitive type data classes to send messages to subscribers.
 
 Here's an example about sending a **string**:
