@@ -1,5 +1,5 @@
 # IPCPipeline (front-end for Cloudtoid Interprocess)
-Inter-process bi-directional communication pipeline (IPC) or (IPBDC) that can both write and read data at the same time. This uses cloudtoid/interprocess as its low-level backend API.
+Inter-process bi-directional communication pipeline (IPC) or (IPBDC) that can both write and read data at the same time. This uses [cloudtoid/interprocess](https://github.com/cloudtoid/interprocess) as its low-level backend API.
 
 This project is based on [Cloudtoid/Interprocess](https://github.com/cloudtoid/interprocess) and is for the ones that do not want to spend time on writing a wrapper for their project to use that library.
 
