@@ -20,7 +20,7 @@ Creating an instance of **IPCPipeline** with the name of the channel and access 
 var pipe = new IPCPipeline("myChannel", PipeAccess.Write);
 ```
 
-Send a mesasge from the **publisher** to **subscribers**:
+Send a message from the **publisher** to **subscribers**:
 ```csharp
 var response = pipe.SendMessage(data);
 if (response.IsSuccess)
