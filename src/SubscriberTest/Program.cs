@@ -10,7 +10,7 @@ namespace SubscriberTest
 		{
 			// Create an instance of our pipeline with the same name used to create our publisher so we can read what it sends.
 			// PipeAccess.Read makes this a 'subscriber'.
-			IPCPipeline pipe = new IPCPipeline("myCustomUniqueChannel", PipeAccess.Read, -1, null);
+			IPCPipeline pipe = new IPCPipeline("myCustomUniqueChannel", PipeAccess.Read);
 
 			// Listen to OnMessageReceived to catch incoming messages.
 			pipe.OnMessageReceived += Pipe_OnMessageReceived;
