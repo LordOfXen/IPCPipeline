@@ -114,23 +114,30 @@ namespace IPC.Pipeline
 
 		private async void ThrCallback()
 		{
-			while (!_cancellationTokenSource.IsCancellationRequested)
+			try
 			{
-				_cancellationToken.ThrowIfCancellationRequested();
-
-				byte[] buffer = System.Buffers.ArrayPool<byte>.Shared.Rent(bufSize);
-				try
+				while (!_cancellationTokenSource.IsCancellationRequested)
 				{
-					ReadOnlyMemory<byte> payload = subscriber.Dequeue(new Memory<byte>(buffer), _cancellationToken);
-					await AsyncCallback(msgId, payload.ToArray());
-				}
-				finally
-				{
-					System.Buffers.ArrayPool<byte>.Shared.Return(buffer, true);
+					_cancellationToken.ThrowIfCancellationRequested();
 
-					// Increment message id.
-					msgId++;
+					byte[] buffer = System.Buffers.ArrayPool<byte>.Shared.Rent(bufSize);
+					try
+					{
+						ReadOnlyMemory<byte> payload = subscriber.Dequeue(new Memory<byte>(buffer), _cancellationToken);
+						await AsyncCallback(msgId, payload.ToArray());
+					}
+					finally
+					{
+						System.Buffers.ArrayPool<byte>.Shared.Return(buffer, true);
+
+						// Increment message id.
+						msgId++;
+					}
 				}
+			}
+			catch (OperationCanceledException) when (!Debugger.IsAttached)
+			{
+				// Swallow exception to prevent crash-ish application exit.
 			}
 		}
 
