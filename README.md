@@ -2,7 +2,7 @@
 
 # IPCPipeline (front-end for Cloudtoid Interprocess)
 
-[<img src="https://img.shields.io/badge/nuget-v1.0.0-green">](https://www.nuget.org/packages/IPCPipeline/)
+[<img src="https://img.shields.io/badge/nuget-v1.0.1-green">](https://www.nuget.org/packages/IPCPipeline/)
 [<img src="https://img.shields.io/badge/License-MIT-blue">](LICENSE)
 <img src="https://img.shields.io/badge/.net-%3E%206.0-blue">
 <img src="https://img.shields.io/badge/.net%20core-%3E%203.1-blue">
